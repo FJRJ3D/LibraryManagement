@@ -29,7 +29,19 @@ public class Main {
             }else if (choice==2) {
 
             }else if (choice==3) {
-
+                input.nextLine();
+                System.out.print("Title: ");
+                String title = input.nextLine();
+                System.out.print("Author: ");
+                String author = input.nextLine();
+                System.out.print("Gender: ");
+                String gender = input.nextLine();
+                System.out.print("Year: ");
+                int year = input.nextInt();
+                input.nextLine();
+                System.out.print("Language: ");
+                String language = input.nextLine();
+                librarian.add(title, author, gender, year, language);
             }else if (choice==4){
 
             }else if (choice==5){
