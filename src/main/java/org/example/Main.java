@@ -9,7 +9,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         Librarian librarian = new Librarian();
 
-        System.out.println("WELCOME TO TASK MANAGER");
+        System.out.println("WELCOME TO LIBRARY MANAGEMENT");
 
 
         while (true) {
