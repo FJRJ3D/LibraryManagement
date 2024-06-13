@@ -37,6 +37,11 @@ public class Main {
                 System.out.print("Gender: ");
                 String gender = input.nextLine();
                 System.out.print("Year: ");
+                while (!input.hasNextInt()) {
+                    System.out.println("You didn't entered any year");
+                    input.next();
+                    System.out.print("Please, enter a year: ");
+                }
                 int year = input.nextInt();
                 input.nextLine();
                 System.out.print("Language: ");
