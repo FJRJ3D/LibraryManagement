@@ -25,6 +25,10 @@ public class Main {
             int choice = input.nextInt();
 
             if (choice==1) {
+                //lookFor(); Cuando este implementado lookFor podrá mostrar los libros qu epuede borrar.
+                System.out.println(" ");
+                System.out.print("What Book do you want to delete? ");
+                librarian.organize(input.nextInt());
 
             }else if (choice==2) {
 

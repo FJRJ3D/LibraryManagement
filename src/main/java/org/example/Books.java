@@ -2,11 +2,20 @@ package org.example;
 
 public class Books extends Library {
 
+    private String title;
     private String author;
     private String gender;
     private int year;
     private String language;
 
+        public String getTitle() {
+            return title;
+        }
+
+        public Books setTitle(String title) {
+            this.title = title;
+            return this;
+        }    
         public String getAuthor() {
             return author;
         }
