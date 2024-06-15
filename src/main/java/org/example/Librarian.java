@@ -14,7 +14,7 @@ public class Librarian {
             Books removedBook = books.remove(choice - 1);
             System.out.println("Book deleted: " + removedBook.getTitle());
 
-        }else if (choice != 0) {
+        }else {
             System.out.println("Invalid choice.");
         }
 
