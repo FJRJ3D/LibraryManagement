@@ -3,6 +3,7 @@ package org.example;
 public class Books extends Library {
 
     private String title;
+    private String title;
     private String author;
     private String gender;
     private int year;
