@@ -15,37 +15,42 @@ public class Books extends Library {
         public Books setTitle(String title) {
             this.title = title;
             return this;
-        }    
+        }
+
         public String getAuthor() {
             return author;
         }
 
-        public void setAuthor(String author) {
+        public Books setAuthor(String author) {
             this.author = author;
+            return this;
         }
 
         public String getGender() {
             return gender;
         }
 
-        public void setGender(String gender) {
+        public Books setGender(String gender) {
             this.gender = gender;
+            return this;
         }
 
         public int getYear() {
             return year;
         }
 
-        public void setYear(int year) {
+        public Books setYear(int year) {
             this.year = year;
+            return this;
         }
 
         public String getLanguage() {
             return language;
         }
 
-        public void setLanguage(String language) {
+        public Books setLanguage(String language) {
             this.language = language;
+            return this;
         }
 
 }
