@@ -1,51 +1,62 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Librarian {
 
-    ArrayList<Books> books = new ArrayList<>();
+    private ArrayList<Books> books = new ArrayList<>();
 
-    public void organize(int choice){
-
-        System.out.println("Books list:");
-        
+    // Método para organizar y eliminar libros de la lista.
+    public void organize(int choice) {
         if (choice > 0 && choice <= books.size()) {
             Books removedBook = books.remove(choice - 1);
             System.out.println("Book deleted: " + removedBook.getTitle());
-
-        }else if (choice != 0) {
+        } else if (choice != 0) {
             System.out.println("Invalid choice.");
         }
-
     }
 
-    public void lookFor(){
-
-    }
-
-    public void add(String title, String author, String gender, int year, String language){
-        books.add(new Books().setTitle(title).setAuthor(author).setGender(gender).setYear(year).setLanguage(language));
-        Books lastBook = books.get(books.size() - 1);
-        System.out.println("Book added: Title: " +lastBook.getTitle()+ ", Author: " + lastBook.getAuthor() + ", Gender: " + lastBook.getGender() + ", Year: " + lastBook.getYear() + ", Language: " + lastBook.getLanguage());
-    } 
-    public void toRegisterUser(String name, String lastName, String address, int phoneNumber){
-        User user = new User(name, lastName, address, phoneNumber);
-        user.add(user);
-        System.out.println("User registered:" + user);
-    }
-    public void toRegisterLoan(String book,boolean isLoaned){
-        if (book.isLoaned()) {
-            System.out.println("The book loaned:" + book);
-            return;
+    // Método para mostrar todos los libros disponibles.
+    public List<String> showAllBooks() {
+        List<String> bookList = new ArrayList<>();
+        for (Books book : books) {
+            bookList.add(book.showInfo());
         }
-        Loan loan = new Loan(book, isLoaned);
-        loan.add(loan);
-        book.setIsLoand(true);
-        System.out.println("Loan registered:" + loan);
+        return bookList;
     }
-    public void toRegister(){
-     toRegisterUser("Alberto", "Rodrigez", "Calle Zarza 123", 653428971);
-     toRegisterLoan("Las mil leyendas", true);
+
+    // Método para buscar un libro por título.
+    public String searchBook(String title) {
+        for (Books book : books) {
+            if (book.getTitle().equalsIgnoreCase(title)) {
+                return book.showInfo();
+            }
+        }
+        return "Book not found";
+    }
+
+    // Método para añadir un nuevo libro a la lista.
+    public void add(String title, String author, String gender, int year, String language) {
+        books.add(new Books(title, author, gender, year, language));
+        Books lastBook = books.get(books.size() - 1);
+        System.out.println("Book added: " + lastBook.showInfo());
+    }
+
+    public void registerLoan(int bookIndex) {
+        if (bookIndex >= 0 && bookIndex < books.size()) {
+            Books book = books.get(bookIndex);
+            if (!book.isLoaned()) {
+                book.setLoaned(true);
+                System.out.println("The book '" + book.getTitle() + "' is now marked as loaned.");
+            } else {
+                System.out.println("The book '" + book.getTitle() + "' is already loaned out.");
+            }
+        } else {
+            System.out.println("Invalid book index.");
+        }
     }
 }
+
+
+

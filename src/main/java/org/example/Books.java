@@ -7,50 +7,68 @@ public class Books extends Library {
     private String gender;
     private int year;
     private String language;
+    private boolean isLoaned;
 
-        public String getTitle() {
-            return title;
-        }
+    // Añadir Constructor de la clase Book.
+    public Books(String title, String author, String gender, int year, String language) {
+        this.title = title;
+        this.author = author;
+        this.gender = gender;
+        this.year = year;
+        this.language = language;
+    }
 
-        public Books setTitle(String title) {
-            this.title = title;
-            return this;
-        }
+    
+    public String getTitle() {
+        return title;
+    }
 
-        public String getAuthor() {
-            return author;
-        }
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-        public Books setAuthor(String author) {
-            this.author = author;
-            return this;
-        }
+    public String getAuthor() {
+        return author;
+    }
 
-        public String getGender() {
-            return gender;
-        }
+    public void setAuthor(String author) {
+        this.author = author;
+    }
 
-        public Books setGender(String gender) {
-            this.gender = gender;
-            return this;
-        }
+    public String getGender() {
+        return gender;
+    }
 
-        public int getYear() {
-            return year;
-        }
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
-        public Books setYear(int year) {
-            this.year = year;
-            return this;
-        }
+    public int getYear() {
+        return year;
+    }
 
-        public String getLanguage() {
-            return language;
-        }
+    public void setYear(int year) {
+        this.year = year;
+    }
 
-        public Books setLanguage(String language) {
-            this.language = language;
-            return this;
-        }
+    public String getLanguage() {
+        return language;
+    }
 
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+    public boolean isLoaned() {
+        return isLoaned;
+    }
+
+    public void setLoaned(boolean loaned) {
+        isLoaned = loaned;
+    }
+
+    // Método para mostrar la información del libro.
+    public String showInfo() {
+        return "Title: " + title + ", Author: " + author + ", Gender: " + gender + ", Year: " + year + ", Language: " + language;
+    }
 }
