@@ -2,7 +2,7 @@
 
 # TEAM4 DevOps F5
 
-![Logo Team-4](./src/main/resources/images/T4.png)
+![Logo Team-4](../fixdev/src/main/resources/images/T4.png) 
 
 ## Guides of de Proyect
 The following guides illustrate how to use some features concretely:
