@@ -7,7 +7,7 @@
 ## Guides of de Proyect
 The following guides illustrate how to use some features concretely:
 
-* [Oficial Guide of Proyect](https://www.canva.com/design/DAGHvBzyCg8/y0VQDCa1Zj3lKS_ofe3XLg/view?utm_content=DAGHvBzyCg8&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+* [Oficial Guide of Proyect](https://www.canva.com/design/DAGIads9dxM/de7LSGPOiIYTYFneG-HvhQ/view?utm_content=DAGIads9dxM&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## Project: Task Organizer in Java
 
