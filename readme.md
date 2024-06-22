@@ -6,10 +6,8 @@
 
 ## Guides of de Proyect
 The following guides illustrate how to use some features concretely:
-* [Guide for First Steps in the App](https://www.canva.com/design/DAGHSo-H5x8/oCU5eVCEUqjsacqn77Fasw/edit?utm_content=DAGHSo-H5x8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 * [Oficial Guide of Proyect](https://www.canva.com/design/DAGHvBzyCg8/y0VQDCa1Zj3lKS_ofe3XLg/view?utm_content=DAGHvBzyCg8&utm_campaign=designshare&utm_medium=link&utm_source=editor)
-
 
 ## Project: Task Organizer in Java
 
