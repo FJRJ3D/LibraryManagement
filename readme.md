@@ -12,7 +12,7 @@ The following guides illustrate how to use some features concretely:
 ## Project: Task Organizer in Java
 
 ### Overview
-The goal of this project is to develop a console application in Java that allows users to manage a task list (ToDo list). The application will enable users to perform CRUD operations: Create, Read, Update, and Delete tasks. The development will follow non-object-oriented programming principles, using primitive data structures and functions.
+The goal of this project is to develop a console application in Java that allows users to manage a book list. The application will enable users to perform CRUD operations: Create, Read, Update, and Delete books. The development will follow object-oriented programming principles, using primitive data structures and functions.
 
 ### Roles
 - **Stakeholders:** María and Diego from F5
@@ -24,26 +24,16 @@ The goal of this project is to develop a console application in Java that allows
     - Hilmar
     - Sofía
 
-### Sprint Goals (Due June 6)
-- **CRUD Functionality:**
-    - **Add Task:** Jose Manuel
-    - **Delete Task:** Fran
-    - **List Tasks:** Sofía
-    - **Mark Task as Completed:** Hilmar
-    - **Exit:** Sofía
+### Trello kanban
+
+* [Trello](https://trello.com/invite/b/gwXZcE3I/ATTI2f2d64ef3d930d31b129664517db3e7986B90473/biblioteca)
+
 
 ### Expected Deliverables
 - **GitHub Repository:** Containing the project code with a comprehensive README file.
 - **Kanban Board:** Managed in Trello (or another suitable tool) to track project tasks and progress.
 - **Bonus:** Documentation and Guide for First Steps in the App
 
-### Performance Criteria
-- The application should function correctly in the console, allowing users to:
-    - Add new tasks.
-    - Delete existing tasks by specifying their index.
-    - List all tasks, indicating which are completed and which are not.
-    - Mark tasks as completed by specifying their index.
-    - Exit the application.
  
 ### Pseudocode method Add Book (class Librarian):
 
