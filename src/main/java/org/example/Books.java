@@ -1,4 +1,5 @@
-package org.example;
+package main.java.org.example;
+
 
 public class Books extends Library {
 
@@ -9,7 +10,6 @@ public class Books extends Library {
     private String language;
     private boolean isLoaned;
 
-    // Añadir Constructor de la clase Book.
     public Books(String title, String author, String gender, int year, String language) {
         this.title = title;
         this.author = author;
@@ -18,7 +18,6 @@ public class Books extends Library {
         this.language = language;
     }
 
-    
     public String getTitle() {
         return title;
     }
@@ -67,7 +66,6 @@ public class Books extends Library {
         isLoaned = loaned;
     }
 
-    // Método para mostrar la información del libro.
     public String showInfo() {
         return "Title: " + title + ", Author: " + author + ", Gender: " + gender + ", Year: " + year + ", Language: " + language;
     }

@@ -1,4 +1,4 @@
-package org.example;
+package main.java.org.example;
 
 import java.util.List;
 import java.util.Scanner;
@@ -33,14 +33,14 @@ public class Main {
                     librarian.organize(bookChoice);
                     break;
                 case 2:
-                    input.nextLine(); // Consume newline left-over
+                    input.nextLine();
                     System.out.print("Enter the title of the book you're looking for: ");
                     String title = input.nextLine();
                     String bookInfo = librarian.searchBook(title);
                     System.out.println(bookInfo);
                     break;
                 case 3:
-                    input.nextLine(); // Consume newline left-over
+                    input.nextLine();
                     System.out.print("Title: ");
                     String newTitle = input.nextLine();
                     System.out.print("Author: ");
@@ -50,11 +50,11 @@ public class Main {
                     System.out.print("Year: ");
                     while (!input.hasNextInt()) {
                         System.out.println("That's not a valid year!");
-                        input.next(); // Clear the invalid input
+                        input.next();
                         System.out.print("Please enter the year: ");
                     }
                     int year = input.nextInt();
-                    input.nextLine(); // Consume newline left-over
+                    input.nextLine();
                     System.out.print("Language: ");
                     String language = input.nextLine();
                     librarian.add(newTitle, author, gender, year, language);

@@ -1,4 +1,4 @@
-package org.example;
+package main.java.org.example;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,6 @@ public class Librarian {
 
     private ArrayList<Books> books = new ArrayList<>();
 
-    // Método para organizar y eliminar libros de la lista.
     public void organize(int choice) {
         if (choice > 0 && choice <= books.size()) {
             Books removedBook = books.remove(choice - 1);
@@ -17,7 +16,6 @@ public class Librarian {
         }
     }
 
-    // Método para mostrar todos los libros disponibles.
     public List<String> showAllBooks() {
         List<String> bookList = new ArrayList<>();
         for (Books book : books) {
@@ -26,7 +24,6 @@ public class Librarian {
         return bookList;
     }
 
-    // Método para buscar un libro por título.
     public String searchBook(String title) {
         for (Books book : books) {
             if (book.getTitle().equalsIgnoreCase(title)) {
@@ -36,7 +33,6 @@ public class Librarian {
         return "Book not found";
     }
 
-    // Método para añadir un nuevo libro a la lista.
     public void add(String title, String author, String gender, int year, String language) {
         books.add(new Books(title, author, gender, year, language));
         Books lastBook = books.get(books.size() - 1);
